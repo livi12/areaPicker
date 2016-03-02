@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>省市区三级联动</title>
+</head>
+<body>
+	<div class="address-wrap">
+		<label for="" class="address-label">选择地址</label>
+		<select name="" id="province1"></select>
+		<select name="" id="city1"></select>
+		<select name="" id="area1"></select>
+	</div>
+	<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.11.1-rc2/jquery.min.js"></script>
+	<script type="text/javascript" src="areaPick.js"></script>
+	<script type="text/javascript">
+		$("body").areaPick({
+		        selectId : {
+		            province : "province1",
+		            city     : "city1" ,
+		            area     : "area1"
+		        },
+		        defaultArea : {
+		            province : "浙江省" ,
+		            city     : "杭州市" ,
+		            area     : "西湖区"
+		        }
+		    });
+	</script>
+</body>
+</html>
